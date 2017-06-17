@@ -16,9 +16,9 @@
 set $mod Mod1
 
 for_window [class="^.*"] border pixel 2
-exec --no-startup-id /home/lamereb/.fehbg
-# exec --no-startup-id /home/lamereb/Pictures/desktop/rD56fsO_to_edit.png
-# exec --no-startup-id /home/lamereb/Pictures/desktop/NeZCCjt.png
+exec --no-startup-id ~/.fehbg
+# exec --no-startup-id ~/Pictures/desktop/rD56fsO_to_edit.png
+# exec --no-startup-id ~/Pictures/desktop/NeZCCjt.png
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -94,7 +94,7 @@ bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 # bindsym $mod+Shift+space floating toggle
-bindsym $mod+Shift+space exec /home/lamereb/.config/i3/titlebar-on-float.sh
+bindsym $mod+Shift+space exec ~/.config/i3/titlebar-on-float.sh
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -223,4 +223,4 @@ smart_gaps on
 exec_always conky -d
 
 # Lock-screen 
-bindsym $mod+Shift+Delete exec ~/.config/i3/lock.sh ~/Pictures/desktop/encom-tron.png
+bindsym $mod+Shift+Delete exec ~/.config/i3/lock.sh ~/Pictures/desktop/encom-tron.jpg
