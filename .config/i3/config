@@ -215,9 +215,12 @@ client.focused_inactive #00FFFF #073642 #839496 #073642 #526F7F
 client.unfocused        #526F7F #073642 #839496 #073642 #526F7F
 
 # gaps
-gaps inner 18
+# gaps inner 18
+# for desktop
+gaps inner 8
 # gaps outer 10
 smart_gaps on
-
-
 exec_always conky -d
+
+# Lock-screen 
+bindsym $mod+Shift+Delete exec ~/.config/i3/lock.sh ~/Pictures/desktop/encom-tron.png
