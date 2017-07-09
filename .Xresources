@@ -26,7 +26,9 @@ URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 !URxvt.font: xft:xos4 Terminus:size=12
 !URxvt.font: xft:Bitstream Vera Sans Mono:pixelsize=34
+!URxvt.font: xft:AnonymousPro-Regular:pixelsize=38
 URxvt.font: xft:Monospace:pixelsize=30
+
 URxvt.letterSpace: -1
 URxvt.scrollBar: false
 URxvt.cursorBlink: true                                              

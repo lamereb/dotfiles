@@ -25,7 +25,9 @@ exec --no-startup-id ~/.fehbg
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 10
+# font pango:DejaVu Sans Mono 10
+font pango:AnonymousPro-Regular 10
+
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -221,6 +223,7 @@ smart_gaps on
 # start-ups
 exec_always compton --config ~/.config/compton.conf
 exec_always conky -d
+exec xmodmap ~/.speedswapper
 
 # Lock-screen 
 bindsym $mod+Shift+Delete exec ~/.config/i3/lock.sh
