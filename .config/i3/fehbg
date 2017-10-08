@@ -1,0 +1,4 @@
+#!/bin/sh
+PIC_BG=NeZCCjt_to_edit.png
+PIC_PTH=$HOME/Pictures/desktop/$PIC_BG
+feh  --bg-scale $PIC_PTH 
