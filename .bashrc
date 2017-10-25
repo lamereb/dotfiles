@@ -123,6 +123,7 @@ fi
 export MOZ_USE_XINPUT2=1
 
 # MY ADDITIONS
+# synclient TapButton3=2
 alias nautilus='nautilus --no-desktop'
-synclient TapButton3=2
 export EDITOR=vim
+export PATH=$PATH:~/bin

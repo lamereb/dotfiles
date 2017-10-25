@@ -59,7 +59,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -130,6 +130,11 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+bindsym $mod+Control+j resize shrink height 10 px or 10 ppt
+bindsym $mod+Control+k resize grow height 10 px or 10 ppt
+bindsym $mod+Control+h resize grow width 10 px or 10 ppt
+bindsym $mod+Control+l resize shrink width 10 px or 10 ppt
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -163,16 +168,30 @@ client.focused_inactive #00FFFF #073642 #839496 #073642 #526F7F
 client.unfocused        #526F7F #073642 #839496 #073642 #526F7F
 
 # gaps - adjust based on computer used
-gaps inner 18
 # gaps outer 10
+
+# work computer
+gaps inner 8
+# home computer
+# gaps inner 18
 smart_gaps on
 
 # CUSTOM start-ups
+# exec --no-startup-id nm-applet    # start nm-applet for Wi-Fi icon on statusbar
 exec_always compton --config ~/.config/compton.conf
 exec_always conky -d
 exec xmodmap ~/.speedswapper
 exec --no-startup-id dropbox start
-# exec --no-startup-id nm-applet    # start nm-applet for Wi-Fi icon on statusbar
+
+# work computer
+exec vmware-user-suid-wrapper --no-startup-id
 
 # Lock-screen 
 bindsym $mod+Shift+Delete exec ~/.config/i3/lock.sh
+
+# scratchpad
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
