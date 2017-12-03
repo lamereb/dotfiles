@@ -182,6 +182,7 @@ exec_always compton --config ~/.config/compton.conf
 exec_always conky -d
 exec xmodmap ~/.speedswapper
 exec --no-startup-id dropbox start
+exec pulseaudio -D
 
 # work computer
 exec vmware-user-suid-wrapper --no-startup-id
